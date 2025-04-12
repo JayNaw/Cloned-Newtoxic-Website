@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: rgb(163, 167, 245);
+    height: 112px;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+}
+
+.second-part{
+    background-color: white;
+    position: relative;
+    top: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 38px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(242, 242, 242);
+}
+
+.second-part p{
+    font-weight: bold;
+    font-style: none;
+    font-size: 16px;
+}
+
+.second-part p a{
+    text-decoration: none;
+}
+
+.strips{
+    position: relative;
+    top: 113px;
+    color: #000;
+    font-weight: bold;
+}
+
+.strips a{
+    text-decoration: none;
+    color: #000;
+}
+
+.strip{
+    padding: 13px;
+    background-color: gainsboro;
+    border-bottom: 1px solid rgb(106, 106, 106);
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.strip:hover{
+    background-color: #ffffff;
+}
+
+.strip:active{
+    border-color: rgb(0, 110, 255);
+    box-shadow: 0 0 15px rgb(0, 119, 255);
+    background-color:  rgb(77, 160, 254);
+}
+
+.more-info{
+    position: relative;
+    top: 113px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(202, 201, 201);
+    padding: 35px;
+}
+
+.more-info p{
+    font-weight: bold;
+}
+
+.p2 a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: 113px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media(max-width: 1000px){
+    header h1{
+        font-size: 30px;
+    }
+    .second-part p{
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px){
+    header h1{
+        font-size: 25px;
+    }
+    .second-part p{
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+    }
+}
